@@ -8,8 +8,9 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
-      {/* Background with particles/gradient effect */}
+      {/* Background with IT-themed particles/gradient effect */}
       <div className="absolute inset-0 bg-hero-gradient opacity-10 z-0"></div>
+      <div className="absolute inset-0 bg-[url('/it-background.jpg')] bg-cover bg-center opacity-20"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.15),transparent_45%)]"></div>
 
       {/* Animated background circles */}
@@ -35,7 +36,7 @@ const Hero = () => {
               Get Started
               <ArrowDownCircle className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a href="#" className="button-outline group">
+            <a href="/ayesa.pdf" target="_blank" className="button-outline group">
               Download Resume
               <FileText className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
             </a>

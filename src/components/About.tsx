@@ -11,11 +11,6 @@ const About = () => {
     'Python, R',
     'TensorFlow, Keras, PyTorch',
   ];
-  
-  const education = [
-    'Riara University',
-    'Sama School',
-  ];
 
   return (
     <section id="about" className="section-padding bg-gradient-to-b from-white to-gray-50">
@@ -35,40 +30,29 @@ const About = () => {
                 with excellent organizational skills to deliver results that exceed expectations.
                 My background in data science and machine learning allows me to approach problems
                 with an analytical mindset, while my virtual assistant experience ensures seamless
-                communication and project management.
+                communication, project management, and administrative support.
               </p>
               
               <p className="text-muted-foreground">
-                I'm constantly expanding my knowledge and staying current with the latest advancements
-                in AI and technology, committed to ethical practices and data-driven solutions.
+                I offer comprehensive virtual assistant services including email management, calendar
+                organization, research, document preparation, and social media maintenance - all powered
+                by my expertise in AI tools and automation. I'm committed to ethical practices
+                and data-driven solutions, constantly expanding my knowledge in both AI technology
+                and professional virtual assistance.
               </p>
             </div>
 
-            {/* Skills & Education */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-3 gradient-text">Expertise</h3>
-                <ul className="space-y-2">
-                  {skills.map((skill, index) => (
-                    <li key={index} className="flex items-center">
-                      <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-                      <span>{skill}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold mb-3 gradient-text">Education</h3>
-                <ul className="space-y-2">
-                  {education.map((edu, index) => (
-                    <li key={index} className="flex items-center">
-                      <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
-                      <span>{edu}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            {/* Skills */}
+            <div>
+              <h3 className="text-xl font-semibold mb-3 gradient-text">Expertise</h3>
+              <ul className="space-y-2">
+                {skills.map((skill, index) => (
+                  <li key={index} className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-5 w-5 text-primary" />
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           
@@ -77,7 +61,7 @@ const About = () => {
             <div className="relative w-[80%] h-[500px] animate-float">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl -z-10 transform rotate-3 scale-105"></div>
               <AnimatedCard className="w-full h-full p-3">
-                <div className="w-full h-full bg-[url('https://via.placeholder.com/600x800')] bg-cover bg-center rounded-lg"></div>
+                <div className="w-full h-full bg-[url('/about.jpg')] bg-cover bg-center rounded-lg"></div>
               </AnimatedCard>
             </div>
           </div>

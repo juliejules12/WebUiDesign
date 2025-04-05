@@ -10,6 +10,8 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import Education from '../components/Education';
+import WhatsAppChat from '../components/WhatsAppChat';
 
 const Index = () => {
   useEffect(() => {
@@ -58,6 +60,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <About />
+        <Education />
         <WhyChooseMe />
         <Skills />
         <Projects />
@@ -66,6 +69,7 @@ const Index = () => {
         <CTA />
       </main>
       <Footer />
+      <WhatsAppChat />
     </div>
   );
 };
